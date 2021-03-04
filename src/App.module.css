@@ -1,0 +1,43 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(#9198e5, #e66465 );
+  min-height: 100vh;
+  font-weight: 800;
+  color: #fff;
+}
+.App h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+.App form {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.App form span {
+  color: #fff;
+  display: block; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+.App input[type="text"], .App button{
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.App button {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgb(77, 77, 153);
+  color: #fff;
+  cursor: pointer;
+}
+.fromStorage {
+  text-align: center;
+}

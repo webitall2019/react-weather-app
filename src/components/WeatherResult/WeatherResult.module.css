@@ -1,0 +1,29 @@
+.WeatherResult .list{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+  color: #fff;
+}
+.WeatherResult h1{
+  display: block;
+  text-align: center;
+}
+.WeatherResult h2{
+  font-weight: 700;
+  margin-top: 0;
+}
+.singleParam {
+  min-width: 170px;
+  flex-basis: 25%;
+  margin: 0 20px 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.WeatherResult span{
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
