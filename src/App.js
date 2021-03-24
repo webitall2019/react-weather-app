@@ -17,6 +17,7 @@ class App extends React.Component {
   }
   
   getWeather = async (event, city) => {
+    console.log(this.state.userCity)
     event.preventDefault();
     if(this.state.userCity === ''){
       return
@@ -24,7 +25,7 @@ class App extends React.Component {
     city = this.state.userCity;
     /* ==== попытка получить данные от API ==== */
     try {
-      let apiRequest = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},ua&units=metric&appid=${API_KEY}`);
+      let apiRequest = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=dnepr,ua&units=metric&appid=${API_KEY}`);
       
         let answer = await apiRequest.json();
         if (answer.main){
@@ -66,6 +67,7 @@ class App extends React.Component {
   }
   /* ===== проверка на длину и получение города из инпута ===== */
   getCity(value) {
+    console.log(typeof value)
     if( value.length < 3 ){
       this.setState({
         error: true,
@@ -75,7 +77,7 @@ class App extends React.Component {
     else {
       this.setState({
         error: false,
-        userCity: toString(value),
+        userCity: String(value)
       })
     } 
   }   
@@ -85,7 +87,7 @@ class App extends React.Component {
     let  dataFromStorage  = JSON.parse(localStorage.getItem('info') );
     let storage;
     if( dataFromStorage != undefined ){
-      console.log(typeof storage);
+      //console.log(typeof storage);
       storage = dataFromStorage.map( (elem, index) => {
         return (
           <StorageResult storageResult={elem} key={index} cityName={sityNameFromStorage}/>
