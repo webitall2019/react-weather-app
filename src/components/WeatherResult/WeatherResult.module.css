@@ -10,7 +10,7 @@
   display: block;
   text-align: center;
 }
-.WeatherResult h2{
+h2{
   font-weight: 700;
   margin-top: 0;
 }
@@ -23,7 +23,43 @@
   border: 1px solid #fff;
 }
 .WeatherResult span{
-  font-size: 20px;
   font-style: italic;
   letter-spacing: 1px;
+}
+
+.StorageResultWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.StorageResult{
+  min-width: 170px;
+  flex-basis: 25%;
+  margin: 0 20px 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #fff;
+  font-size: 15px;
+}
+.StorageResult h2 {
+  font-size: 30px;
+}
+h2, h1{
+  text-align: center;
+}
+@media screen and (max-width: 425px){
+  .WeatherResult .list{ 
+   max-width: inherit;
+   font-size: 10px;
+  }
+  .singleParam, .StorageResult {
+    word-break: break-word;
+    padding: 5px;
+    margin: 0 5px 10px;
+  }
+  .StorageResult h2 {
+    font-size: 17px;
+    margin: 0 0 5px;
+  }
 }

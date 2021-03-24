@@ -111,7 +111,7 @@ class App extends React.Component {
             { this.errorHandler() }
           </span>
           <button type="submit" onClick={ (event)=> this.getWeather(event) }>
-            Get weather
+            Узнать
           </button>
         </form>
         <div className={classes.fromStorage}>

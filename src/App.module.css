@@ -14,13 +14,11 @@
   color: #fff;
 }
 .App form {
-  margin-bottom: 40px;
   text-align: center;
 }
 .App form span {
   color: #fff;
   display: block; 
-  margin-bottom: 20px;
   text-align: center;
 }
 .App input[type="text"], .App button{
@@ -40,4 +38,10 @@
 }
 .fromStorage {
   text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .App h1 {
+    font-size: 25px;
+  }
 }

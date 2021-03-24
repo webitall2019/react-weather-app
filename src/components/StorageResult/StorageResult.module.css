@@ -1,16 +1,3 @@
-.StorageResultWrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-h2, h1{
-  text-align: center;
-}
-.StorageResult{
-  min-width: 170px;
-  flex-basis: 25%;
-  margin: 0 20px 20px;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #fff;
-}
+@import '../WeatherResult/WeatherResult.module.css';
+
+
