@@ -17,7 +17,6 @@ class App extends React.Component {
   }
   
   getWeather = async (event, city) => {
-    console.log(this.state.userCity)
     event.preventDefault();
     if(this.state.userCity === ''){
       return
@@ -84,7 +83,7 @@ class App extends React.Component {
   
   render() { 
     let sityNameFromStorage = localStorage.getItem('city')
-    let  dataFromStorage  = JSON.parse(localStorage.getItem('info') );
+    let dataFromStorage = JSON.parse(localStorage.getItem('info') );
     let storage;
     if( dataFromStorage != undefined ){
       //console.log(typeof storage);
